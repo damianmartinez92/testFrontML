@@ -31,7 +31,7 @@ const Listado = () => {
 
   const goToDetails = (productId) => {
     if (productId !== "") {
-      history.push("/items/" + productId);
+      history.push("/items/" + productId, { data: MockProduct.filters });
     }
   };
 
